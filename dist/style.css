@@ -541,7 +541,8 @@ section.cards_move {
 }
 .cards {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: 300px 300px 300px; */
     grid-template-rows: auto;
     justify-items: center;
     grid-gap: 5px;
@@ -592,6 +593,7 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
+    
 }
 @media (max-width: 947px){
     .menu-btn{
